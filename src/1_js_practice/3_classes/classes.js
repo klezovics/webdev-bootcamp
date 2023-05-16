@@ -1,5 +1,8 @@
 // Here's an example of a class in JavaScript.
+// Create the car blueprint
 class Car {
+
+    //manufacturing process!
     constructor(name) {
         this.name = name;
     }
@@ -11,6 +14,7 @@ class Car {
 }
 
 // Example usage:
+// Easy peasy car manufacturing
 const myCar = new Car("Tesla");
 myCar.drive(); // Output: Driving the Tesla
 
