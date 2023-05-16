@@ -1,0 +1,1 @@
+Task: Do all the exercises from here: https://exercism.org/tracks/javascript/exercises
