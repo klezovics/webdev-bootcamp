@@ -1,5 +1,3 @@
-Certainly! Here are the key methods for the JavaScript data containers you mentioned: arrays, maps, objects, and sets.
-
 **Arrays:**
 Arrays are ordered collections of elements.
 
