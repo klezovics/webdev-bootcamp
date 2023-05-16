@@ -1,0 +1,3 @@
+function createTwoObjectsWith3DifferentFieldsEach() {
+
+}
