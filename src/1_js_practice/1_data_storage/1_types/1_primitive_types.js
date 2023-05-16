@@ -11,4 +11,17 @@ Symbol: Represents a unique identifier. Symbols are primarily used to create pro
 
 
 function createAndPrintVariableOfEachPrimitiveJsType() {
+    const srt = "asd";
+    const num = 1;
+    const bln = true;
+    let a;
+    const nullValue = null;
+    const symbol = Symbol('symbol');
+
+
+
+    console.log(srt, num, bln, a, nullValue, symbol);
 }
+
+
+
