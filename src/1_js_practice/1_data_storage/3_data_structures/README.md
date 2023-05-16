@@ -16,17 +16,6 @@ Arrays are ordered collections of elements.
 - **find**: Returns the first element in the array that satisfies a provided testing function.
 - **reduce**: Applies a function against an accumulator and each element in the array to reduce it to a single value.
 
-**Maps:**
-Maps are collections of key-value pairs.
-
-- **set**: Adds or updates a key-value pair in the map.
-- **get**: Retrieves the value associated with a specific key from the map.
-- **has**: Checks if a specific key exists in the map.
-- **delete**: Removes a key-value pair from the map.
-- **clear**: Removes all key-value pairs from the map.
-- **size**: Returns the number of key-value pairs in the map.
-- **forEach**: Executes a provided function once for each key-value pair in the map.
-
 **Objects:**
 Objects are collections of properties represented as key-value pairs.
 
@@ -37,6 +26,17 @@ Objects are collections of properties represented as key-value pairs.
 - **Object.entries**: Returns an array of a given object's own enumerable key-value pairs.
 - **Object.assign**: Copies the values of all enumerable properties from one or more source objects to a target object.
 - **Object.hasOwnProperty**: Checks if an object has a specific property as its own property.
+
+**Maps:**
+Maps are collections of key-value pairs.
+
+- **set**: Adds or updates a key-value pair in the map.
+- **get**: Retrieves the value associated with a specific key from the map.
+- **has**: Checks if a specific key exists in the map.
+- **delete**: Removes a key-value pair from the map.
+- **clear**: Removes all key-value pairs from the map.
+- **size**: Returns the number of key-value pairs in the map.
+- **forEach**: Executes a provided function once for each key-value pair in the map.
 
 **Sets:**
 Sets are collections of unique elements.
