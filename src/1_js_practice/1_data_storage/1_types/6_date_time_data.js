@@ -1,5 +1,3 @@
-// Create a date object with 27th February 2027 as its date.
-// Print to console
 /*
 The JavaScript `Date` class is a built-in object that represents a date and time. It provides methods to work with dates, perform calculations, and format dates according to various patterns. Here's an overview of some commonly used features of the `Date` class:
 
@@ -50,6 +48,9 @@ The JavaScript `Date` class is a built-in object that represents a date and time
 These are just a few examples of what you can do with the `Date` class. It's worth noting that JavaScript also has other libraries like Moment.js or date-fns that provide more advanced date manipulation and formatting capabilities.
  */
 
+
+// Create a date object with 27th February 2027 as its date.
+// Print to console
 function createADateObject() {
 
 }
