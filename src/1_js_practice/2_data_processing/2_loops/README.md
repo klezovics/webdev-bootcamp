@@ -120,3 +120,63 @@ The `for...of` loop iterates over each character in the `str` string and logs it
 The `for...in` loop is used for iterating over object properties, while the `for...of` loop is used for iterating over
 iterable values, such as arrays, strings, and collections. These loops provide convenient ways to iterate and work with
 the elements of an object or iterable in JavaScript.
+
+# Break and continue
+
+Certainly! Here's an expanded explanation with code examples:
+
+- `break` statement:
+  The `break` statement is used to exit a loop prematurely. It terminates the loop and resumes execution at the next
+  statement after the loop. Here's an example that uses `break` in a `for` loop:
+
+```javascript
+for (let i = 1; i <= 5; i++) {
+    if (i === 3) {
+        break; // Terminate the loop when i equals 3
+    }
+    console.log(i);
+}
+```
+
+Output:
+
+```
+1
+2
+```
+
+In this example, the loop starts with `i` equal to 1 and increments by 1 on each iteration. When `i` becomes 3,
+the `break` statement is encountered, and the loop terminates immediately. Therefore, only the numbers 1 and 2 are
+printed.
+
+- `continue` statement:
+  The `continue` statement is used to skip the current iteration of a loop and proceed to the next iteration. It allows
+  you to bypass a part of the loop's code based on a specific condition. Here's an example using `continue` in a `while`
+  loop:
+
+```javascript
+let i = 0;
+while (i < 5) {
+    i++;
+    if (i === 3) {
+        continue; // Skip the current iteration when i equals 3
+    }
+    console.log(i);
+}
+```
+
+Output:
+
+```
+1
+2
+4
+5
+```
+
+In this example, the loop starts with `i` equal to 0. On each iteration, `i` is incremented by 1. When `i` becomes 3,
+the `continue` statement is encountered, and the code skips the remaining part of the loop for that iteration. As a
+result, the number 3 is skipped in the output, and the loop continues until `i` reaches 5.
+
+These examples demonstrate how `break` and `continue` statements can alter the flow of execution within loops, providing
+control over the loop's behavior.
