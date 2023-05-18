@@ -1,4 +1,4 @@
-Exception handling in JavaScript allows you to handle and recover from runtime errors or exceptional situations that may occur during the execution of your code. It helps prevent abrupt program termination and provides a way to gracefully handle errors.
+**[Exception handling in JavaScript allows you to handle and recover from runtime errors or exceptional situations that may occur during the execution of your code. It helps prevent abrupt program termination and provides a way to gracefully handle errors.
 
 JavaScript provides a `try-catch` statement for exception handling. Here's a summary of the process:
 
@@ -42,3 +42,32 @@ try {
 ```
 
 By using exception handling, you can catch and handle errors in a controlled manner, allowing your program to continue executing instead of abruptly terminating. It gives you the opportunity to log, handle, or recover from errors, enhancing the reliability and stability of your JavaScript code.
+
+# Error object
+
+Utilizing error objects
+When a runtime error occurs, a new Error object is created and thrown. With this Error object, we can determine the type of the Error and handle it according to its type.
+
+Types of Errors:
+Besides error constructors, Javascript also has other core Error constructors.
+
+AggregateError
+EvalError
+InternalError
+RangeError
+ReferenceError
+SyntaxError
+
+```javascript
+try {
+  willGiveErrorSometime();
+} catch (error) {
+    if (error instanceof RangeError) {
+        rangeErrorHandler(error);
+    } else if (error instanceof ReferenceError) {
+        referenceErrorHandle(error);
+    } else {
+        errorHandler(error);
+    }
+}
+```
