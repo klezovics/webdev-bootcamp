@@ -4,6 +4,7 @@ This guide is based on: https://roadmap.sh/javascript
 Exercises:
 1. https://exercism.org/tracks/javascript/exercises
 2. https://edabit.com/challenges/javascript
+3. https://pikabu.ru/story/25_besplatnyikh_kursov_javascriptrazrabotki_2023_goda_10247376
 
 Flashcards:
 1. https://www.cram.com/flashcards/javascript-interview-questions-6007795
