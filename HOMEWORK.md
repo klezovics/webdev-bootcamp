@@ -3,7 +3,7 @@
 
 # JS
 ## Variables names
-- Understand which data types 
+- Understand which variable types are valid and which are not
 
 ## Data storage and types
 
