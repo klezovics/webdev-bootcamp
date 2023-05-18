@@ -1,4 +1,6 @@
-Certainly! Here's a breakdown of the topic of classes in JavaScript into 5 lessons for teaching junior developers:
+Watch this video: https://youtu.be/PFmuCDHHpwk
+
+Then create a tutorial for youself
 
 Lesson 1: Introduction to Classes
 - Explain the concept of classes as blueprints or templates for creating objects.
