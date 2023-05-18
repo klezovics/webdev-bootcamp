@@ -180,3 +180,49 @@ result, the number 3 is skipped in the output, and the loop continues until `i` 
 
 These examples demonstrate how `break` and `continue` statements can alter the flow of execution within loops, providing
 control over the loop's behavior.
+
+# Labeled statements
+
+In JavaScript, labeled statements provide a way to associate a label with a specific statement. This label can be used
+to control the flow of execution within nested loops or to provide a target for the `break` and `continue` statements.
+
+Here's a brief summary of labeled statements:
+
+- Labeled statements are created by placing an identifier (label) followed by a colon (`:`) before the targeted
+  statement.
+- The label can be any valid JavaScript identifier.
+- Labeled statements are often used with nested loops to provide a target for `break` and `continue` statements that
+  need to affect an outer loop.
+- The `break` statement, when used with a label, terminates the execution of the labeled statement and transfers control
+  to the next statement after the labeled statement.
+- The `continue` statement, when used with a label, skips the remaining part of the labeled statement and proceeds to
+  the next iteration of the labeled statement.
+
+Here's an example that demonstrates the usage of a labeled statement:
+
+```javascript
+outerLoop: for (let i = 1; i <= 3; i++) {
+    innerLoop: for (let j = 1; j <= 3; j++) {
+        if (j === 2) {
+            continue outerLoop; // Skips to the next iteration of the outer loop
+        }
+        console.log(`i: ${i}, j: ${j}`);
+    }
+}
+```
+
+Output:
+
+```
+i: 1, j: 1
+i: 2, j: 1
+i: 3, j: 1
+```
+
+In this example, the `outerLoop` label is associated with the outer `for` loop, while the `innerLoop` label is
+associated with the inner `for` loop. When `j` is equal to 2, the `continue outerLoop` statement is encountered, causing
+the inner loop to skip to the next iteration of the outer loop. As a result, the second iteration of the inner loop is
+bypassed, and the output shows only the iterations where `j` is 1.
+
+Labeled statements provide a way to control the flow of execution in complex loop structures, allowing you to target
+specific loops with `break` and `continue` statements.
