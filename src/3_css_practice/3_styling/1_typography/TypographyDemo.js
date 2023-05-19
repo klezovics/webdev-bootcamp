@@ -1,18 +1,24 @@
+import styled from "styled-components";
 
-const RedP = styled.div`
+const RedTextDiv = styled.div`
     color: red;
 `
 
-const SourceSansPro = styled.div`
-  font-family: 'Source Sans Pro', sans-serif;
+const FunnyFontFamilyDiv = styled.div`
+  font-family: 'Comic Sans MS', 'Arial', sans-serif;
+`
+
+const BigFontDiv = styled.div`
+  font-size: xxx-large;
 `
 
 
 const TypographyDemo = () => (
     <>
         <div>Typography demo</div>
-        <RedP>This text is red</RedP>
-        <SourceSansPro>This text is in Source Sans Pro</SourceSansPro>
+        <RedTextDiv>This text is red</RedTextDiv>
+        <FunnyFontFamilyDiv>This text is comic sans ms</FunnyFontFamilyDiv>
+        <BigFontDiv>This is some big text</BigFontDiv>
     </>
 )
 
