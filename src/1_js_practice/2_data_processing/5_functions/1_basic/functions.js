@@ -41,3 +41,25 @@
 
 These exercises cover a variety of concepts and challenges related to JavaScript functions. They will help you practice writing functions, working with different data types, and manipulating arrays and strings. Happy coding!
  */
+
+var expect = require('expect.js');
+
+function getFirstNNumbers(n) {
+    var result = [];
+    for (var i = 1; i <= n; i++) {
+        result.push(i);
+    }
+    return result;
+}
+
+function testGetFirstNNumbers() {
+    console.log("Test start")
+    expect(getFirstNNumbers(1)).to.eql([1]);
+    expect(getFirstNNumbers(2)).to.eql([1,2]);
+
+    // The line below will throw an error because the arrays are not equal
+    expect(getFirstNNumbers(2)).to.eql([1,2,3]);
+    console.log("Test end")
+}
+
+testGetFirstNNumbers()
