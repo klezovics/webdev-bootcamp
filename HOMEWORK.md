@@ -11,6 +11,9 @@
 - Understand why we need "Date" class and how to use it
 - Understand why we need the "BigInt" class and how to use it
 
+## Loops
+- Watch a tutorial in JS loops, understand everything in details and then write 30 practice loops
+
 # CSS
 ---
 
