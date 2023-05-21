@@ -10,7 +10,7 @@
 // Can define an interface from primitive types
 // Interface -> Describes what kind of fields/methods the object has
 // If we don't know if the field will be there, we can add a question mark
-console.log("I am compiled 223!!!")
+console.log("I am compiled 2234!!!")
 
 interface User {
     name: string;
