@@ -11,8 +11,27 @@ test('test can add two numbers', () => {
     expect(result).toBe(15);
 });
 
+test('test can negate every number in an array', () => {
+   let result = [1,-2,3,-4,5];
+
+   //Implementation goes here!
+
+   expect(result).toEqual([-1,2,-3,4,-5]);
+});
+
+test('test can create list of numbers one to ten', () => {
+    var result = [];
+
+    //Implementation goes here!
+
+    expect(result).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+});
+
+
+
 function toArrayOfSquares(arr) {
 }
+
 test('test can convert to an array of squares', () => {
     const a = [1, 2, 3]
     const doubles = toArrayOfSquares(a)
