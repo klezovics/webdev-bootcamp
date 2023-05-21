@@ -1,4 +1,5 @@
 // TypeScript = JavaScript + Types
+// Meaning: You can define variable types and you can define function parameter types
 
 // L1: TypeScript is like JavaScript with minor changes.
 // These changes relate to types.
