@@ -1,3 +1,6 @@
+# Watch video about switch: https://youtu.be/2gE2K8i5tvs
+
+
 Sure! Let's discuss the different branching operators in JavaScript, including `if-else`, `else if`, `switch`, and the conditional (ternary) operator.
 
 1. **if-else Statement**: The `if-else` statement is used to execute different code blocks based on a condition. It follows the syntax:
