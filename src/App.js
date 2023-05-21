@@ -3,13 +3,14 @@ import TypographyDemo from "./3_css_practice/3_styling/1_typography/TypographyDe
 import StarWarsFilm from "./2_react_practice/4_consume_rest_api/1_react_query/StarWarsFilm";
 import {QueryClient} from "react-query";
 import StarWarsFilmWrapper from "./2_react_practice/4_consume_rest_api/1_react_query/StarWarsFileWrapper";
+import StarWarsFilmViaFetch from "./2_react_practice/4_consume_rest_api/2_fetch_api/StarWarsFilmViaFetch";
 
 function App() {
     const queryClient = new QueryClient();
 
     return (
         <div className="App">
-           <StarWarsFilmWrapper/>
+           <StarWarsFilmViaFetch/>
         </div>
     );
 }

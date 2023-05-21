@@ -22,7 +22,7 @@ const StarWarsFilm = () => {
 
     return (
         <div>
-            <h1>This is the big movie !!</h1>
+            <h1>Here we are fetching data using ReactQuery!!</h1>
             <h2>{data?.title}</h2>
             <p>Director: {data?.director}</p>
             <p>Release Date: {data?.release_date}</p>
