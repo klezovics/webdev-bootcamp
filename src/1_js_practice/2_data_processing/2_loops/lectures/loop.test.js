@@ -1,4 +1,4 @@
-test('can add two numbers', () => {
+test('test can add two numbers', () => {
 
     // Step 1. Setup your test data
     const num1 = 5;
