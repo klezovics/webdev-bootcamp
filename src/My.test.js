@@ -1,9 +1,3 @@
-var expect = require('expect.js');
-const { test } = require('jest');
-
-console.log('Hello, Tests!');
-
-
 test('add function should return the sum of two numbers', () => {
     // Arrange
     const num1 = 5;
