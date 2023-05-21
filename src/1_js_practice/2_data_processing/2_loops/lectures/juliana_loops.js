@@ -10,7 +10,7 @@ const fruits = ['banana','orange','kiwi']
 
 // Eating fruits using for-of loop
 // for(let currentFruit of fruits) {
-//     console.log('Juliana cuts ' + fruit)
+//     console.log('Juliana cuts ' + currentFruit)
 //     console.log('Juliana eats ' + currentFruit)
 // }
 
@@ -47,7 +47,7 @@ const fruits = ['banana','orange','kiwi']
 //     kiwi: 'AWESOME!'
 // }
 //
-// for(let fruit in fruitPreferences) {
-//     console.log('Juliana thinks ' + fruit + ' is ' + fruitPreferences[fruit])
+// for(let fruitName in fruitPreferences) {
+//     console.log('Juliana thinks ' + fruitName + ' is ' + fruitPreferences[fruitName])
 // }
 
