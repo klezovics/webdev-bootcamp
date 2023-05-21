@@ -1,6 +1,10 @@
-Certainly! In JavaScript, loops are used to repeat a block of code multiple times. They provide a way to iterate over a
-collection of items, execute a set of statements until a condition is met, or create a repetitive behavior. There are
-three types of loops in JavaScript: `for`, `while`, and `do...while`. Let's explore each one:
+# AK Loop intro
+Loop = Repeat a certain action multiple times
+Specify loop = Specify action + number of times to repeat
+Loop anatomy = Body + Head -> Body(what to do) + Head(how many times to do it)
+
+Specify action -> simple -> just define what you want in the body of the loop
+Specify number of times to repeat -> either a simple count or until a condition is met
 
 # Basic Loops
 
