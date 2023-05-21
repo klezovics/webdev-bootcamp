@@ -21,7 +21,7 @@
 ## Visual Studio Code
 - Watch a video about how to use VS Code
 - Watch a video about useful pluggins for VS Code
-- Watch a video about how to debug JS in VS Code
+- Watch a video about how to debug JS in VS Code 
 - Watch a video how to work with Git via VS Code
 
 ## Git
