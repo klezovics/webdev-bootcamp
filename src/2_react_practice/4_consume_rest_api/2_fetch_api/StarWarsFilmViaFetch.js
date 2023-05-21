@@ -34,7 +34,7 @@ const StarWarsFilmViaFetch = () => {
 
   return (
     <div>
-      <h1>Here we are fetching data using FETCH !</h1>
+      <h1>Here we are fetching data using FETCH API !</h1>
       <h2>{filmData?.title}</h2>
       <p>Director: {filmData?.director}</p>
       <p>Release Date: {filmData?.release_date}</p>
