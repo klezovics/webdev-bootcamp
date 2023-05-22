@@ -8,7 +8,6 @@ const ReduxStoreConsumer = () => {
 
     const [inputValue, setInputValue] = useState('');
 
-
     const updateMessage = () => {
         dispatch({ type: "UPDATE_MESSAGE", payload: inputValue });
     };
