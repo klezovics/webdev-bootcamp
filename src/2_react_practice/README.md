@@ -1,0 +1,1 @@
+Awesome collection React resources: https://github.com/enaqx/awesome-react
