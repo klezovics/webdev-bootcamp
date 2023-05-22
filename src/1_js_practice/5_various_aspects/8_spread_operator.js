@@ -3,6 +3,7 @@
 // 2. Objects
 // 3. Function arguments
 // 4. React props
+// Its purpose is to create a copy of the original array/object and maybe also change it a bit
 
 // Example 1: Spreading an array into another array
 const array1 = [1, 2, 3];
