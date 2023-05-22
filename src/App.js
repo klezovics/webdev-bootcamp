@@ -1,4 +1,5 @@
 import {QueryClient} from "react-query";
+import ReduxClient from "./2_react_practice/3_redux/2_hello_redux/ReduxClient";
 
 
 function App() {
@@ -6,7 +7,7 @@ function App() {
 
     return (
         <div className="App">
-          <div>Hi!</div>
+          <ReduxClient />
         </div>
     );
 }
