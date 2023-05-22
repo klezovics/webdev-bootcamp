@@ -1,4 +1,5 @@
 Task: Do all the exercises from here: 
+If you're in a rush, here's all the JS you need for React https://youtu.be/m55PTVUrlnA
 This guide is based on: https://roadmap.sh/javascript
 
 Exercises:
