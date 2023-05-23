@@ -25,7 +25,7 @@ const ReduxStoreConsumer = () => {
     );
 };
 
-const ReduxClient = () => {
+const ReduxConsumerContainer = () => {
     return (
         <div>
             <Provider store={store}>
@@ -35,4 +35,4 @@ const ReduxClient = () => {
     );
 }
 
-export default ReduxClient;
+export default ReduxConsumerContainer;

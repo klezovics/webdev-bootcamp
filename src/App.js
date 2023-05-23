@@ -1,5 +1,5 @@
 import {QueryClient} from "react-query";
-import ReduxClient from "./2_react_practice/3_redux/2_hello_redux/ReduxClient";
+import ReduxConsumerContainer from "./2_react_practice/3_redux/2_hello_redux/ReduxConsumerContainer";
 
 
 function App() {
@@ -7,7 +7,7 @@ function App() {
 
     return (
         <div className="App">
-          <ReduxClient />
+          <ReduxConsumerContainer />
         </div>
     );
 }
