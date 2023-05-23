@@ -1,6 +1,7 @@
 import store from "./store";
 import {Provider, useDispatch, useSelector} from "react-redux";
 import {useState} from "react";
+import MessageContainer from "./MessageContainer";
 
 const ReduxStoreConsumer = () => {
     const message = useSelector((state) => state.message);
@@ -29,7 +30,7 @@ const ReduxConsumerContainer = () => {
     return (
         <div>
             <Provider store={store}>
-              <ReduxStoreConsumer />
+              <MessageContainer />
             </Provider>
         </div>
     );
