@@ -20,16 +20,27 @@ const expect = require("expect.js");
 // expect(sumOfDigits(1000)).to.equal(1);
 // expect(sumOfDigits(9999)).to.equal(36);
 
-function sumOfNumbersInArray(numbers) {
-  let sum = 0;
-  numbers.forEach((num) => (sum += num));
-  return sum;
+// function sumOfNumbersInArray(numbers) {
+//   let sum = 0;
+//   numbers.forEach((num) => (sum += num));
+//   return sum;
+// }
+// expect(sumOfNumbersInArray([0])).to.equal(0);
+// expect(sumOfNumbersInArray([1])).to.equal(1);
+// expect(sumOfNumbersInArray([1, 2])).to.equal(3);
+// expect(sumOfNumbersInArray([1, 2, 3])).to.equal(6);
+// expect(sumOfNumbersInArray([1, 2, 3, 4])).to.equal(10);
+// expect(sumOfNumbersInArray([55, -55])).to.equal(0);
+
+
+// Function must always return 42 irregarless of the input
+function always42(x,y) {
 }
-expect(sumOfNumbersInArray([0])).to.equal(0);
-expect(sumOfNumbersInArray([1])).to.equal(1);
-expect(sumOfNumbersInArray([1, 2])).to.equal(3);
-expect(sumOfNumbersInArray([1, 2, 3])).to.equal(6);
-expect(sumOfNumbersInArray([1, 2, 3, 4])).to.equal(10);
-expect(sumOfNumbersInArray([55, -55])).to.equal(0);
+
+expect(always42(1,2)).to.equal(42);
+expect(always42(99,-1)).to.equal(42);
+expect(always42(-200,-2)).to.equal(42);
+
+
 
 console.log("All tests passed!!!");
