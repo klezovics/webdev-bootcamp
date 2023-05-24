@@ -35,11 +35,14 @@ const expect = require("expect.js");
 
 // Function must always return 42 irregarless of the input
 function always42(x,y) {
+    return 42;
 }
 
 expect(always42(1,2)).to.equal(42);
 expect(always42(99,-1)).to.equal(42);
 expect(always42(-200,-2)).to.equal(42);
+expect(always42(-1, 9)).to.equal(42);
+
 
 
 
