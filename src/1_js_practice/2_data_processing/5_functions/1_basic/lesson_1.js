@@ -34,16 +34,26 @@ const expect = require("expect.js");
 
 
 // Function must always return 42 irregarless of the input
-function always42(x,y) {
-    return 42;
+// function always42(x,y) {
+//     return 42;
+// }
+//
+// expect(always42(1,2)).to.equal(42);
+// expect(always42(99,-1)).to.equal(42);
+// expect(always42(-200,-2)).to.equal(42);
+// expect(always42(-1, 9)).to.equal(42);
+
+
+// Input: Array of strings
+// Output: String with all the strings from the array joined together
+// Example: ['ad', 'bb', 'c'] -> 'adbbc
+function joinStringsArray(strings) {
+    return "";
 }
 
-expect(always42(1,2)).to.equal(42);
-expect(always42(99,-1)).to.equal(42);
-expect(always42(-200,-2)).to.equal(42);
-expect(always42(-1, 9)).to.equal(42);
-
-
+expect(joinStringsArray([])).to.equal("");
+expect(joinStringsArray(["a"])).to.equal("a");
+expect(joinStringsArray(["ab","bc","cd"])).to.equal("abbccd");
 
 
 console.log("All tests passed!!!");
