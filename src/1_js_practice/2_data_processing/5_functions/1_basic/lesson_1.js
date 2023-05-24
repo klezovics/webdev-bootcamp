@@ -19,3 +19,4 @@ expect(sumOfDigits(10)).to.equal(1);
 expect(sumOfDigits(55)).to.equal(10);
 expect(sumOfDigits(1000)).to.equal(1);
 expect(sumOfDigits(9999)).to.equal(36);
+console.log("All tests passed!!!")
