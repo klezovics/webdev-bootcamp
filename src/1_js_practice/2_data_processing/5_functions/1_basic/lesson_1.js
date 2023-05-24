@@ -47,15 +47,26 @@ const expect = require("expect.js");
 // Input: Array of strings
 // Output: String with all the strings from the array joined together
 // Example: ['ad', 'bb', 'c'] -> 'adbbc
-function joinStringsArray(strings) {
-    let result = "";
-    strings.forEach(srt => result+=srt );
-    return result;
+// function joinStringsArray(strings) {
+//     let result = "";
+//     strings.forEach(srt => result+=srt );
+//     return result;
+// }
+//
+// expect(joinStringsArray([])).to.equal("");
+// expect(joinStringsArray(["a"])).to.equal("a");
+// expect(joinStringsArray(["ab","bc","cd"])).to.equal("abbccd");
+
+
+function calculateAverage(numbers) {
 }
 
-expect(joinStringsArray([])).to.equal("");
-expect(joinStringsArray(["a"])).to.equal("a");
-expect(joinStringsArray(["ab","bc","cd"])).to.equal("abbccd");
-
+expect(calculateAverage([])).to.equal(0);
+expect(calculateAverage([1])).to.equal(1);
+expect(calculateAverage([2,2])).to.equal(2);
+expect(calculateAverage([1,2])).to.equal(1.5);
+expect(calculateAverage([1,2,3])).to.equal(2);
+expect(calculateAverage([1,2,3,4])).to.equal(2.5);
+expect(calculateAverage([-100,100])).to.equal(0);
 
 console.log("All tests passed!!!");
