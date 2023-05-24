@@ -21,17 +21,15 @@ const expect = require("expect.js");
 // expect(sumOfDigits(9999)).to.equal(36);
 
 function sumOfNumbersInArray(numbers) {
-    return 0;
+  let sum = 0;
+  numbers.forEach((num) => (sum += num));
+  return sum;
 }
 expect(sumOfNumbersInArray([0])).to.equal(0);
 expect(sumOfNumbersInArray([1])).to.equal(1);
-expect(sumOfNumbersInArray([1,2])).to.equal(3);
-expect(sumOfNumbersInArray([1,2,3])).to.equal(6);
-expect(sumOfNumbersInArray([1,2,3,4])).to.equal(10);
-expect(sumOfNumbersInArray([55,-55])).to.equal(0);
+expect(sumOfNumbersInArray([1, 2])).to.equal(3);
+expect(sumOfNumbersInArray([1, 2, 3])).to.equal(6);
+expect(sumOfNumbersInArray([1, 2, 3, 4])).to.equal(10);
+expect(sumOfNumbersInArray([55, -55])).to.equal(0);
 
-
-
-
-
-console.log("All tests passed!!!")
+console.log("All tests passed!!!");
