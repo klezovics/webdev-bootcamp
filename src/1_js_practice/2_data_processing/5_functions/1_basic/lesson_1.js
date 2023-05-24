@@ -48,7 +48,9 @@ const expect = require("expect.js");
 // Output: String with all the strings from the array joined together
 // Example: ['ad', 'bb', 'c'] -> 'adbbc
 function joinStringsArray(strings) {
-    return "";
+    let result = "";
+    strings.forEach(srt => result+=srt );
+    return result;
 }
 
 expect(joinStringsArray([])).to.equal("");
