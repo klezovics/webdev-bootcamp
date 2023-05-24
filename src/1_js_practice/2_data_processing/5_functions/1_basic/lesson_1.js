@@ -21,6 +21,7 @@ const expect = require("expect.js");
 // expect(sumOfDigits(9999)).to.equal(36);
 
 function sumOfNumbersInArray(numbers) {
+    return 0;
 }
 expect(sumOfNumbersInArray([0])).to.equal(0);
 expect(sumOfNumbersInArray([1])).to.equal(1);
