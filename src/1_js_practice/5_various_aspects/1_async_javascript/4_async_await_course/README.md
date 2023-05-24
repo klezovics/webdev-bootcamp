@@ -9,6 +9,7 @@ Its this course: https://egghead.io/courses/asynchronous-javascript-with-async-a
 - await can only be applied to a promise
 - you can apply it to a promise object directly or to a function that returns a promise
 - await is a nicer way to write then() callbacks
+- if promise is rejected await method throws an exception
 
 ## Async
 - if you declare a function as async, it will return a promise
