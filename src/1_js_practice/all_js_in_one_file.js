@@ -44,9 +44,24 @@ class Car {
 
 // Can use a class to create objects
 const car1 = new Car('BMW');
+
+//Classes exist just to allow us to efficiently create objects
+const car1FromObject = {
+    name: 'BMW',
+    drive: function () {
+        console.log('Driving ' + this.name);
+    }
+}
+
 car1.drive();
+const car2FromObject = {
+    name: 'Mercedes',
+    drive: function () {
+        console.log('Driving ' + this.name);
+    }
+}
 
 const car2 = new Car('Mercedes');
-car1.drive()
+car2.drive()
 
 
