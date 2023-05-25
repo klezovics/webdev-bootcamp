@@ -17,8 +17,13 @@
 
   /* position children */
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+#counter {
+  margin-bottom: 30px;
 }
 
 .btn {
@@ -38,9 +43,9 @@
   text-shadow: var(--size) calc(-1*var(--size)) 0 pink, var(--size) calc(-1*var(--size)) 0 pink, calc(-1*var(--size)) var(--size) 0 pink, var(--size) var(--size) 0 pink;
 
   /* animation */
-  transition: transform 3s ease;
+  transition: transform 1s;
 }
 
 .btn:hover {
-  transform: scale(3);
+  transform: scale(1.2);
 }

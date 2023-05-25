@@ -5,8 +5,25 @@
 <body>
 
 <div class="container">
-    <button class="btn">Click Me</button>
+    <h1 id="counter">Button clicked 0 times</h1>
+    <div>
+        <button id="btn" class="btn">Click Me</button>
+    </div>
 </div>
 
+<script>
+    // Get the button element
+    const button = document.getElementById('btn');
+
+    // Add onclick event handler
+    var count = 0
+    var clickHandler = () => {
+        count++;
+        const counter = document.getElementById('counter');
+        counter.innerHTML = 'Button clicked ' + count + ' times';
+    }
+
+    button.addEventListener('click', clickHandler);
+</script>
 </body>
 </html>
