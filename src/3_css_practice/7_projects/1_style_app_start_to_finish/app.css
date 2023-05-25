@@ -1,3 +1,11 @@
+/* Note that you go top-down on the elements in DOM */
+/*
+    You do everything in this order:
+    1) Determine element dimensions and position
+    2) Color and style the element
+    3) Determine the position of the children
+ */
+
 :root {
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
