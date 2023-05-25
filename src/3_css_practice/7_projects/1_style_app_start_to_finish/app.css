@@ -10,13 +10,20 @@ body {
 }
 
 .container {
+    /* Configure the size of the container */
     min-height: 100vh;
     max-width: 730px;
     width: 100%;
+
+    /* Position the container itself */
     position: relative;
     margin: 0 auto;
+
+    /* Position child elements */
     display: flex;
     flex-direction: column;
+    /* Center children horizontally */
     align-items: center;
+    /* Push down vertically */
     justify-content: flex-end;
 }
