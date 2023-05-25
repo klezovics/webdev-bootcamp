@@ -81,6 +81,7 @@ body {
     cursor: pointer;
     text-transform: uppercase;
     letter-spacing: 2px;
+
     background-image: url(
     'https://jsbin-user-assets.s3.amazonaws.com/GarthDB/box.svg'
     );
