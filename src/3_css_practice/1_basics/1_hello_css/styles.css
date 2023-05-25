@@ -1,0 +1,46 @@
+/*
+  Thought sequence when styling CSS element:
+  1. Position it
+  2. Size it
+  3. Color it
+  4. Configure typography
+  5. Configure animation
+  5. Position its children
+*/
+
+.container {
+  /* position */
+  margin: 0 auto;
+
+  /* size */
+  height: 100vh;
+
+  /* position children */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  /* size */
+  width: 200px;
+  height: 100px;
+
+  /* colors */
+  color: white;
+  background-color: black;
+  border: 10px solid orange;
+
+  /* typography */
+  font-family: Arial, sans-serif;
+  font-size: 25px;
+  --size: 1px;
+  text-shadow: var(--size) calc(-1*var(--size)) 0 pink, var(--size) calc(-1*var(--size)) 0 pink, calc(-1*var(--size)) var(--size) 0 pink, var(--size) var(--size) 0 pink;
+
+  /* animation */
+  transition: transform 3s ease;
+}
+
+.btn:hover {
+  transform: scale(3);
+}
