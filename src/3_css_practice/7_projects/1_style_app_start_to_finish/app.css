@@ -27,3 +27,19 @@ body {
     /* Push down vertically */
     justify-content: flex-end;
 }
+
+.todo-app {
+    /* Determine dimensions */
+    max-width: calc(100% - 20px);
+    width: 100%;
+
+    /* Color */
+    background-color: #ecf0f1;
+    border-radius: 4px 4px 0 0;
+    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.1);
+
+    /* Position children*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
