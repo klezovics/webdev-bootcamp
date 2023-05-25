@@ -1,26 +1,20 @@
-const fetch = require("node-fetch");
-const showGitHubUser = async (handle) => {
-    const url = `https://api.github.com/users/${handle}`;
-    const response = await fetch(url);
+Symbol.asyncIterator = Symbol.asyncIterator || Symbol("asyncIterator");
+const delay = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
-    //If the promise is rejected, the await keyword throws an exception
-    const body = await response.json();
-
-    // If an issue arrises we can throw an error
-    if (response.status !== 200) {
-        throw Error(body.message);
-    }
-
-    return body;
+async function* someGenerator() {
+    await delay(1000);
+    yield 1;
+    await delay(1000);
+    yield 2;
+    await delay(1000);
+    yield 3;
 }
 
-showGitHubUser('notexistinguser')
-    .then(user => {
-        // Will print 'undefined' because the user does not exist
-        console.log(user.name);
-        console.log(user.location);
-    }).catch(err => {
-        // A thrown exception automatically results in the promise being rejected
-        console.log("Error: ", err.message);
+async function main() {
+    for await (let value of someGenerator()) {
+        console.log(value);
     }
-)
+}
+
+main();
+console.log('After main');
