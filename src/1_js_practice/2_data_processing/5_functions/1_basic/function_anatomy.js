@@ -10,6 +10,7 @@ function isEven(number) {
     return number % 2 === 0;
 }
 
+const a = 2;
 console.log("isEven(2):",isEven(2));
 console.log("isEven(17):",isEven(17));
 
