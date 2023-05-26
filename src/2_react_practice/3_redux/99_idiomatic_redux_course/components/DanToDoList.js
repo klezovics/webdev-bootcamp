@@ -3,12 +3,21 @@ import Footer from "./Footer";
 import AddTodo from "./AddTodo";
 import VisibleTodoList from "./VisibleTodoList";
 
-const DanToDoList = () => (
-  <div>
-    <AddTodo />
-    <VisibleTodoList todos={[{ id: 1, text: "Hi", completed: "false" }]} />
-    <Footer />
-  </div>
-);
+const DanToDoList = () => {
+  let logTodo = (id) => {
+    console.log("Todo clicked: " + id);
+  };
+
+  return (
+    <div>
+      <AddTodo />
+      <VisibleTodoList
+        todos={[{ id: 1, text: "Hi", completed: "false" }]}
+        onTodoClick={logTodo}
+      />
+      <Footer />
+    </div>
+  );
+};
 
 export default DanToDoList;

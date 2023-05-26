@@ -32,5 +32,4 @@ const AddTodo = ({ dispatch }) => {
 //   dispatch: PropTypes.func.isRequired,
 // };
 
-export default AddTodo;
-// export default connect()(AddTodo);
+export default connect()(AddTodo);

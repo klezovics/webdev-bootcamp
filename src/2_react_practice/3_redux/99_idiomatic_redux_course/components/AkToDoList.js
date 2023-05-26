@@ -8,10 +8,8 @@ const todoAppReducer = todoApp;
 const todoAppStore = createStore(todoAppReducer);
 const AkToDoList = () => (
   <div>
-    <Provider store={todoAppStore}>
-      <AkToDoList />
-    </Provider>
+    <Provider store={todoAppStore}>{<DanToDoList />}</Provider>
   </div>
 );
 
-export default DanToDoList;
+export default AkToDoList;
