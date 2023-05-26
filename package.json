@@ -35,7 +35,6 @@
     "eject": "react-scripts eject",
     "lint": "npx npx prettier --check .",
     "format": "npx prettier --write ."
-
   },
   "eslintConfig": {
     "extends": [
