@@ -5,7 +5,6 @@
 //     count++;
 // }
 
-
 // Here's a good example for do-while
 // let userInput;
 // do {

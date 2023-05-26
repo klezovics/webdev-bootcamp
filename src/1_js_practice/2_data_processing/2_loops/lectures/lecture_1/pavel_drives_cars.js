@@ -2,10 +2,9 @@ const cars = ["BMW", "Volvo", "Mercedes", "Ferrari"];
 
 // Must print "Pavel drives <Car name> car" for every car in the array
 
-cars.forEach((car)=>{
-    console.log("Pawel drives " + car);
-
-})
+cars.forEach((car) => {
+  console.log("Pawel drives " + car);
+});
 
 // for (const car of cars) {
 //     console.log("Pawel drives " + car);

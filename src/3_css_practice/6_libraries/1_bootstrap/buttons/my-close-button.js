@@ -1,7 +1,5 @@
-import {CloseButton} from "react-bootstrap";
+import { CloseButton } from "react-bootstrap";
 
-const MyCloseButton = () => (
-    <CloseButton />
-)
+const MyCloseButton = () => <CloseButton />;
 
 export default MyCloseButton;

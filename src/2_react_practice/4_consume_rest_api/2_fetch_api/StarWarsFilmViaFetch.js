@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
 const StarWarsFilmViaFetch = () => {
   const [filmData, setFilmData] = useState(null);
@@ -8,9 +8,9 @@ const StarWarsFilmViaFetch = () => {
   useEffect(() => {
     const fetchFilm = async () => {
       try {
-        const response = await fetch('https://swapi.dev/api/films/1/');
+        const response = await fetch("https://swapi.dev/api/films/1/");
         if (!response.ok) {
-          throw new Error('Failed to fetch film data');
+          throw new Error("Failed to fetch film data");
         }
         const data = await response.json();
         setFilmData(data);

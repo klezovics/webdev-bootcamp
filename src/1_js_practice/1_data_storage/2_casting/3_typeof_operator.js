@@ -4,7 +4,7 @@ function createVariableOfEveryTypeAndApplyTypeOfOperator() {
   const b = true;
   const n = null;
   let a;
-  console.log(typeof srt, typeof num,typeof b,typeof n,typeof a);
+  console.log(typeof srt, typeof num, typeof b, typeof n, typeof a);
 }
 
 createVariableOfEveryTypeAndApplyTypeOfOperator();

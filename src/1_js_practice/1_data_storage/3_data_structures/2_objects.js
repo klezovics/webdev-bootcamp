@@ -1,8 +1,8 @@
 const o1 = {
-    a: "s",
-    b: 2,
-    c: [1,2,3]
-}
+  a: "s",
+  b: 2,
+  c: [1, 2, 3],
+};
 
 // console.log(o1.a);
 // console.log(o1["b"]);
@@ -13,4 +13,4 @@ const o1 = {
 // const o2 = Object.assign({}, o1);
 // console.log(o2);
 
-console.log(o1.hasOwnProperty('b'));
+console.log(o1.hasOwnProperty("b"));

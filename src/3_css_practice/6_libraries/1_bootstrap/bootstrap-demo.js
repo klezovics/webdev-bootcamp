@@ -15,25 +15,25 @@ import MyOffcanvas from "./my-offcanvas";
 import MyTable from "./data-structures/my-table";
 
 const BootstrapDemo = () => {
-    return (
-        <>
-            <MyTable/>
-            <MyOffcanvas/>
-            <MyModal/>
-            <MyList/>
-            <MyFigure/>
-            <MyDropdown/>
-            <MyCloseButton/>
-            <MyCard/>
-            <MyButtonGroup/>
-            <MyBreadcrumb/>
-            <MyBadge/>
-            <MyAccordion/>
-            <MyAlert/>
-            <AppHero/>
-            <Header/>
-        </>
-    )
-}
+  return (
+    <>
+      <MyTable />
+      <MyOffcanvas />
+      <MyModal />
+      <MyList />
+      <MyFigure />
+      <MyDropdown />
+      <MyCloseButton />
+      <MyCard />
+      <MyButtonGroup />
+      <MyBreadcrumb />
+      <MyBadge />
+      <MyAccordion />
+      <MyAlert />
+      <AppHero />
+      <Header />
+    </>
+  );
+};
 
 export default BootstrapDemo;

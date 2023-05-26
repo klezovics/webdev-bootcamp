@@ -44,4 +44,3 @@ function problemX() {
 
 19 Write a function that takes a number as input and returns "even and divisible by 3" if it's even and divisible by
  */
-

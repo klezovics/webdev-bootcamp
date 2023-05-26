@@ -7,22 +7,20 @@
 // Inputs -> functional arguments
 // Outputs -> return statement
 function isEven(number) {
-    return number % 2 === 0;
+  return number % 2 === 0;
 }
 
 const a = 2;
-console.log("isEven(2):",isEven(2));
-console.log("isEven(17):",isEven(17));
+console.log("isEven(2):", isEven(2));
+console.log("isEven(17):", isEven(17));
 
 // You can also have functions without any arguments
 function sayHello() {
-    console.log("Hello!");
+  console.log("Hello!");
 }
 
 function getMagicNumber() {
-    return 42;
+  return 42;
 }
 
 // Function attributes: name, arguments, body, return value
-
-

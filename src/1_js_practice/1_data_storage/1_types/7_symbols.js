@@ -20,14 +20,12 @@ In summary, while strings are typically used as object keys in JavaScript, symbo
 
  */
 
-
-
 // Create a new symbol
-const mySymbol = Symbol('My Symbol');
+const mySymbol = Symbol("My Symbol");
 
 // Use the symbol as an object property key
 const obj = {};
-obj[mySymbol] = 'Value assigned to the symbol key';
+obj[mySymbol] = "Value assigned to the symbol key";
 
 // Access the value using the symbol as the key
 console.log(obj[mySymbol]); // Output: Value assigned to the symbol key
@@ -36,7 +34,7 @@ console.log(obj[mySymbol]); // Output: Value assigned to the symbol key
 console.log(Symbol.keyFor(mySymbol)); // Output: undefined (Symbols created with Symbol() do not have a registered key)
 
 // Create a global symbol that can be accessed across realms
-const globalSymbol = Symbol.for('Global Symbol');
+const globalSymbol = Symbol.for("Global Symbol");
 console.log(Symbol.keyFor(globalSymbol)); // Output: Global Symbol (Symbols created with Symbol.for() have a registered key)
 
 // Use symbols to define unique property keys
@@ -44,8 +42,8 @@ const key1 = Symbol();
 const key2 = Symbol();
 
 const obj2 = {
-    [key1]: 'Value 1',
-    [key2]: 'Value 2'
+  [key1]: "Value 1",
+  [key2]: "Value 2",
 };
 
 console.log(obj2[key1]); // Output: Value 1

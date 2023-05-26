@@ -1,29 +1,28 @@
 <html>
-<head>
-    <link href="styles.css" rel="stylesheet" type="text/css">
-</head>
-<body>
-
-<div class="container">
-    <h1 id="counter">Button clicked 0 times</h1>
-    <div>
+  <head>
+    <link href="styles.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="counter">Button clicked 0 times</h1>
+      <div>
         <button id="btn" class="btn">Click Me</button>
+      </div>
     </div>
-</div>
 
-<script>
-    // Get the button element
-    const button = document.getElementById('btn');
+    <script>
+      // Get the button element
+      const button = document.getElementById("btn");
 
-    // Add onclick event handler
-    var count = 0
-    var clickHandler = () => {
+      // Add onclick event handler
+      var count = 0;
+      var clickHandler = () => {
         count++;
-        const counter = document.getElementById('counter');
-        counter.innerHTML = 'Button clicked ' + count + ' times';
-    }
+        const counter = document.getElementById("counter");
+        counter.innerHTML = "Button clicked " + count + " times";
+      };
 
-    button.addEventListener('click', clickHandler);
-</script>
-</body>
+      button.addEventListener("click", clickHandler);
+    </script>
+  </body>
 </html>

@@ -1,4 +1,4 @@
-const fruits = ['banana','orange','kiwi']
+const fruits = ["banana", "orange", "kiwi"];
 
 // Let's teach Juliana how to eat fruits !!!
 
@@ -39,7 +39,6 @@ const fruits = ['banana','orange','kiwi']
 //     arrayIndex++
 // } while(arrayIndex < fruits.length)
 
-
 // Displaying fruit preferences using for-in loop
 // const fruitPreferences = {
 //     banana: 'nice',
@@ -50,4 +49,3 @@ const fruits = ['banana','orange','kiwi']
 // for(let fruitName in fruitPreferences) {
 //     console.log('Juliana thinks ' + fruitName + ' is ' + fruitPreferences[fruitName])
 // }
-

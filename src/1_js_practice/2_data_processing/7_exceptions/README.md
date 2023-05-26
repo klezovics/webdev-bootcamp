@@ -1,4 +1,4 @@
-**[Exception handling in JavaScript allows you to handle and recover from runtime errors or exceptional situations that may occur during the execution of your code. It helps prevent abrupt program termination and provides a way to gracefully handle errors.
+\*\*[Exception handling in JavaScript allows you to handle and recover from runtime errors or exceptional situations that may occur during the execution of your code. It helps prevent abrupt program termination and provides a way to gracefully handle errors.
 
 JavaScript provides a `try-catch` statement for exception handling. Here's a summary of the process:
 
@@ -62,12 +62,12 @@ SyntaxError
 try {
   willGiveErrorSometime();
 } catch (error) {
-    if (error instanceof RangeError) {
-        rangeErrorHandler(error);
-    } else if (error instanceof ReferenceError) {
-        referenceErrorHandle(error);
-    } else {
-        errorHandler(error);
-    }
+  if (error instanceof RangeError) {
+    rangeErrorHandler(error);
+  } else if (error instanceof ReferenceError) {
+    referenceErrorHandle(error);
+  } else {
+    errorHandler(error);
+  }
 }
 ```

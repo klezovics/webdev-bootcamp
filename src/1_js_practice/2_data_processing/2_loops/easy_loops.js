@@ -13,9 +13,9 @@ const array = [1, 3, 4, 5, 6, 2];
 // });
 
 const exchange_rate = {
-    USD: 1.2,
-    EUR: 4.3,
-    GBP: 2.11,
+  USD: 1.2,
+  EUR: 4.3,
+  GBP: 2.11,
 };
 
 // 3. Create a loop using for-in

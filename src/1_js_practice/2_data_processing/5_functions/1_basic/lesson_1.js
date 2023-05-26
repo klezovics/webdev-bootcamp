@@ -56,8 +56,8 @@ const expect = require("expect.js");
 // expect(joinStringsArray(["ab","bc","cd"])).to.equal("abbccd");
 
 function calculateAverage(numbers) {
-  if (numbers.length === 0) return 0
-  
+  if (numbers.length === 0) return 0;
+
   let sum = 0;
   numbers.forEach((num) => (sum += num));
   let result = sum / numbers.length;

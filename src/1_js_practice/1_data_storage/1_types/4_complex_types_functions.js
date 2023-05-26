@@ -6,5 +6,3 @@ function saveFunctionToAVariableAndUseVariableToCallFunction() {
 }
 
 saveFunctionToAVariableAndUseVariableToCallFunction();
-
-

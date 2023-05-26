@@ -20,15 +20,10 @@ function createAndPrintArrayOfObjects() {
 }
 
 function createAndPrintObjectSomeOfFieldsOfWhichAreArrays() {
-
-    const o1 = {
-        a: [
-            "Hello", 12
-        ],
-        b: [
-            1, 2, 3
-        ]
-    }
-    console.log(o1);
+  const o1 = {
+    a: ["Hello", 12],
+    b: [1, 2, 3],
+  };
+  console.log(o1);
 }
 createAndPrintObjectSomeOfFieldsOfWhichAreArrays();

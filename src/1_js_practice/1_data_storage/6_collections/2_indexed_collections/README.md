@@ -9,20 +9,21 @@ adding, updating, and removing elements.
 The primary indexed collection in JavaScript is the Array. Here's a summary with a code example:
 
 1. Array:
+
    ```javascript
    const array = [1, 2, 3, 4, 5];
 
-   console.log(array[0]);   // Output: 1l
+   console.log(array[0]); // Output: 1l
    console.log(array.length); // Output: 5
 
-   array.push(6);           // Add an element at the end
-   console.log(array);      // Output: [1, 2, 3, 4, 5, 6]
+   array.push(6); // Add an element at the end
+   console.log(array); // Output: [1, 2, 3, 4, 5, 6]
 
-   array[1] = 10;           // Update an element at index 1
-   console.log(array);      // Output: [1, 10, 3, 4, 5, 6]
+   array[1] = 10; // Update an element at index 1
+   console.log(array); // Output: [1, 10, 3, 4, 5, 6]
 
-   array.pop();             // Remove the last element
-   console.log(array);      // Output: [1, 10, 3, 4, 5]
+   array.pop(); // Remove the last element
+   console.log(array); // Output: [1, 10, 3, 4, 5]
    ```
 
 Arrays allow you to access elements using their numerical indices and provide methods for manipulation, such as adding
@@ -43,32 +44,35 @@ or floating-point numbers, using a fixed memory layout.
 Here's an overview of Typed Arrays along with some code examples:
 
 1. Int8Array:
+
    ```javascript
-   const int8Array = new Int8Array(4);  // Create an Int8Array with length 4
+   const int8Array = new Int8Array(4); // Create an Int8Array with length 4
 
    int8Array[0] = 10;
    int8Array[1] = -5;
    int8Array[2] = 2;
    int8Array[3] = 0;
 
-   console.log(int8Array);  // Output: Int8Array [10, -5, 2, 0]
+   console.log(int8Array); // Output: Int8Array [10, -5, 2, 0]
    ```
 
 2. Uint16Array:
-   ```javascript
-   const uint16Array = new Uint16Array([100, 200, 300]);  // Create a Uint16Array from an array
 
-   console.log(uint16Array[0]);     // Output: 100
+   ```javascript
+   const uint16Array = new Uint16Array([100, 200, 300]); // Create a Uint16Array from an array
+
+   console.log(uint16Array[0]); // Output: 100
    console.log(uint16Array.length); // Output: 3
    ```
 
 3. Float32Array:
+
    ```javascript
-   const float32Array = new Float32Array([1.5, 2.7, 3.2]);  // Create a Float32Array from an array
+   const float32Array = new Float32Array([1.5, 2.7, 3.2]); // Create a Float32Array from an array
 
    float32Array[1] = 4.1;
 
-   console.log(float32Array);      // Output: Float32Array [1.5, 4.1, 3.2]
+   console.log(float32Array); // Output: Float32Array [1.5, 4.1, 3.2]
    ```
 
 Typed Arrays provide a variety of typed array constructors, such as `Int8Array`, `Uint16Array`, `Float32Array`, and

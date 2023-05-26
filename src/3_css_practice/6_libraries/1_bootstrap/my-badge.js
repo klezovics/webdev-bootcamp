@@ -1,7 +1,5 @@
-import {Badge} from "react-bootstrap";
+import { Badge } from "react-bootstrap";
 
-const MyBadge = () => (
-    <Badge bg="secondary">Win!</Badge>
-)
+const MyBadge = () => <Badge bg="secondary">Win!</Badge>;
 
 export default MyBadge;

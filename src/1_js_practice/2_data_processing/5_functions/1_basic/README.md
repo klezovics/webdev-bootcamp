@@ -44,7 +44,7 @@ Variables declared inside a function are scoped to that function, meaning they a
 In addition to function declarations, JavaScript also supports function expressions. A function expression is an anonymous function assigned to a variable. Here's an example:
 
 ```javascript
-let square = function(num) {
+let square = function (num) {
   return num * num;
 };
 

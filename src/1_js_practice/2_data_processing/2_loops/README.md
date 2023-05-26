@@ -1,4 +1,5 @@
 # AK Loop intro
+
 Loop = Repeat a certain action multiple times
 Specify loop = Specify action + number of times to repeat
 Loop anatomy = Body + Head -> Body(what to do) + Head(how many times to do it)
@@ -12,7 +13,7 @@ Specify number of times to repeat -> either a simple count or until a condition 
    parts: initialization, condition, and increment/decrement.
 
    ```javascript
-   for (initialization; condition; increment/decrement) {
+   for (initialization; condition; increment / decrement) {
      // Code to be executed in each iteration
    }
    ```
@@ -84,11 +85,11 @@ Certainly! Here are code examples for using `for...in` and `for...of` loops in J
    names.
 
 ```javascript
-const obj = {a: 1, b: 2, c: 3};
+const obj = { a: 1, b: 2, c: 3 };
 
 for (let key in obj) {
-    console.log(key);          // Output: a, b, c
-    console.log(obj[key]);    // Output: 1, 2, 3
+  console.log(key); // Output: a, b, c
+  console.log(obj[key]); // Output: 1, 2, 3
 }
 ```
 
@@ -103,7 +104,7 @@ its corresponding value to the console.
 const arr = [1, 2, 3, 4, 5];
 
 for (let value of arr) {
-    console.log(value);    // Output: 1, 2, 3, 4, 5
+  console.log(value); // Output: 1, 2, 3, 4, 5
 }
 ```
 
@@ -115,7 +116,7 @@ Here's another example using a string:
 const str = "Hello";
 
 for (let char of str) {
-    console.log(char);     // Output: H, e, l, l, o
+  console.log(char); // Output: H, e, l, l, o
 }
 ```
 
@@ -135,10 +136,10 @@ Certainly! Here's an expanded explanation with code examples:
 
 ```javascript
 for (let i = 1; i <= 5; i++) {
-    if (i === 3) {
-        break; // Terminate the loop when i equals 3
-    }
-    console.log(i);
+  if (i === 3) {
+    break; // Terminate the loop when i equals 3
+  }
+  console.log(i);
 }
 ```
 
@@ -161,11 +162,11 @@ printed.
 ```javascript
 let i = 0;
 while (i < 5) {
-    i++;
-    if (i === 3) {
-        continue; // Skip the current iteration when i equals 3
-    }
-    console.log(i);
+  i++;
+  if (i === 3) {
+    continue; // Skip the current iteration when i equals 3
+  }
+  console.log(i);
 }
 ```
 
@@ -206,12 +207,12 @@ Here's an example that demonstrates the usage of a labeled statement:
 
 ```javascript
 outerLoop: for (let i = 1; i <= 3; i++) {
-    innerLoop: for (let j = 1; j <= 3; j++) {
-        if (j === 2) {
-            continue outerLoop; // Skips to the next iteration of the outer loop
-        }
-        console.log(`i: ${i}, j: ${j}`);
+  innerLoop: for (let j = 1; j <= 3; j++) {
+    if (j === 2) {
+      continue outerLoop; // Skips to the next iteration of the outer loop
     }
+    console.log(`i: ${i}, j: ${j}`);
+  }
 }
 ```
 

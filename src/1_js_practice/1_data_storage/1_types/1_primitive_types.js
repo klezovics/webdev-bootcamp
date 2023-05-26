@@ -9,19 +9,13 @@ Null: Represents the intentional absence of any object value.
 Symbol: Represents a unique identifier. Symbols are primarily used to create property keys that are not accessible by regular iteration.
 */
 
-
 function createAndPrintVariableOfEachPrimitiveJsType() {
-    const srt = "asd";
-    const num = 1;
-    const bln = true;
-    let a;
-    const nullValue = null;
-    const symbol = Symbol('symbol');
+  const srt = "asd";
+  const num = 1;
+  const bln = true;
+  let a;
+  const nullValue = null;
+  const symbol = Symbol("symbol");
 
-
-
-    console.log(srt, num, bln, a, nullValue, symbol);
+  console.log(srt, num, bln, a, nullValue, symbol);
 }
-
-
-

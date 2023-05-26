@@ -7,89 +7,87 @@
  */
 
 :root {
-    font-size: 16px;
-    font-family: 'Open Sans', sans-serif;
-    font-weight: 600;
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
 }
 
 body {
-    background-color: #bdc3c7;
-    margin: 0;
+  background-color: #bdc3c7;
+  margin: 0;
 }
 
 .container {
-    /* Configure the size of the container */
-    min-height: 100vh;
-    max-width: 730px;
-    width: 100%;
+  /* Configure the size of the container */
+  min-height: 100vh;
+  max-width: 730px;
+  width: 100%;
 
-    /* Position the container itself */
-    position: relative;
-    margin: 0 auto;
+  /* Position the container itself */
+  position: relative;
+  margin: 0 auto;
 
-    /* Position child elements */
-    display: flex;
-    flex-direction: column;
-    /* Center children horizontally */
-    align-items: center;
-    /* Push down vertically */
-    justify-content: flex-end;
+  /* Position child elements */
+  display: flex;
+  flex-direction: column;
+  /* Center children horizontally */
+  align-items: center;
+  /* Push down vertically */
+  justify-content: flex-end;
 }
 
 .todo-app {
-    /* Determine dimensions */
-    max-width: calc(100% - 20px);
-    width: 100%;
+  /* Determine dimensions */
+  max-width: calc(100% - 20px);
+  width: 100%;
 
-    /* Color */
-    background-color: #ecf0f1;
-    border-radius: 4px 4px 0 0;
-    box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.1);
+  /* Color */
+  background-color: #ecf0f1;
+  border-radius: 4px 4px 0 0;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.1);
 
-    /* Position children*/
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  /* Position children*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .todo-list {
-    /* Do a reset on the list */
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  /* Do a reset on the list */
+  list-style: none;
+  margin: 0;
+  padding: 0;
 
-    /* Determine dimensions */
-    width: 100%;
+  /* Determine dimensions */
+  width: 100%;
 
-    /* Position element */
-    order: -1;
+  /* Position element */
+  order: -1;
 
-    /* Position children */
-    display: flex;
-    flex-direction: column;
+  /* Position children */
+  display: flex;
+  flex-direction: column;
 }
 
 [class^="todo-list__item"] {
-    height: 80px;
-    display: block;
-    box-sizing: border-box;
-    padding: 27px 33px 0 78px;
+  height: 80px;
+  display: block;
+  box-sizing: border-box;
+  padding: 27px 33px 0 78px;
 
-    color: #af544f;
-    box-shadow: 0 1px 0 0 #e6e6e6, 0 2px 0 0 white;
+  color: #af544f;
+  box-shadow: 0 1px 0 0 #e6e6e6, 0 2px 0 0 white;
 
-    cursor: pointer;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 2px;
 
-    background-image: url(
-    'https://jsbin-user-assets.s3.amazonaws.com/GarthDB/box.svg'
-    );
-    background-repeat: no-repeat;
-    background-position: 28px 16px;
+  background-image: url("https://jsbin-user-assets.s3.amazonaws.com/GarthDB/box.svg");
+  background-repeat: no-repeat;
+  background-position: 28px 16px;
 }
 
 .todo-list__item--completed {
-    color: #16a085;
-    background-image: url('https://jsbin-user-assets.s3.amazonaws.com/GarthDB/done.svg');
+  color: #16a085;
+  background-image: url("https://jsbin-user-assets.s3.amazonaws.com/GarthDB/done.svg");
 }

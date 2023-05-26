@@ -46,7 +46,9 @@ In JavaScript, classes are a way to define blueprints for creating objects. They
      }
 
      greet() {
-       console.log(`Hello, my name is ${this.name} and I'm ${this.age} years old.`);
+       console.log(
+         `Hello, my name is ${this.name} and I'm ${this.age} years old.`
+       );
      }
    }
    ```
@@ -55,8 +57,8 @@ In JavaScript, classes are a way to define blueprints for creating objects. They
    Objects can be created from a class using the `new` keyword, followed by the class name and any required arguments for the constructor.
 
    ```javascript
-   const person1 = new Person('John Doe', 25);
-   const person2 = new Person('Jane Smith', 30);
+   const person1 = new Person("John Doe", 25);
+   const person2 = new Person("Jane Smith", 30);
    ```
 
 6. Inheritance:
@@ -70,7 +72,9 @@ In JavaScript, classes are a way to define blueprints for creating objects. They
      }
 
      study() {
-       console.log(`${this.name} is studying hard for the ${this.grade} grade.`);
+       console.log(
+         `${this.name} is studying hard for the ${this.grade} grade.`
+       );
      }
    }
    ```
@@ -85,7 +89,7 @@ In JavaScript, classes are a way to define blueprints for creating objects. They
      }
    }
 
-   const result = MathUtils.add(3, 5);  // result = 8
+   const result = MathUtils.add(3, 5); // result = 8
    ```
 
 These are some basic concepts of JavaScript classes. They provide a foundation for creating reusable and structured code. As you progress, you can explore more advanced topics like class inheritance, encapsulation, and polymorphism to further enhance your object-oriented programming skills.

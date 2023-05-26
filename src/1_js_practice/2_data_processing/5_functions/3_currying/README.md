@@ -12,7 +12,7 @@ With currying, you can transform this function into a curried version, which mea
 
 ```javascript
 function add(a) {
-  return function(b) {
+  return function (b) {
     return a + b;
   };
 }

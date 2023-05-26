@@ -23,6 +23,7 @@ problems effectively.
 Certainly! Here's a summary of keyed collections in JavaScript with code examples:
 
 1. Map:
+
    ```javascript
    const map = new Map();
 
@@ -30,13 +31,14 @@ Certainly! Here's a summary of keyed collections in JavaScript with code example
    map.set("key2", "value2");
 
    console.log(map.get("key1")); // Output: value1
-   console.log(map.size);       // Output: 2
+   console.log(map.size); // Output: 2
 
    map.delete("key2");
    console.log(map.has("key2")); // Output: false
    ```
 
 2. Set:
+
    ```javascript
    const set = new Set();
 
@@ -44,14 +46,15 @@ Certainly! Here's a summary of keyed collections in JavaScript with code example
    set.add("value2");
    set.add("value1"); // Duplicates are ignored
 
-   console.log(set.size);             // Output: 2
-   console.log(set.has("value1"));     // Output: true
+   console.log(set.size); // Output: 2
+   console.log(set.has("value1")); // Output: true
 
    set.delete("value2");
-   console.log(set.has("value2"));     // Output: false
+   console.log(set.has("value2")); // Output: false
    ```
 
 3. WeakMap:
+
    ```javascript
    const weakMap = new WeakMap();
 
@@ -61,14 +64,15 @@ Certainly! Here's a summary of keyed collections in JavaScript with code example
    weakMap.set(key1, "value1");
    weakMap.set(key2, "value2");
 
-   console.log(weakMap.get(key1));    // Output: value1
-   console.log(weakMap.has(key2));    // Output: true
+   console.log(weakMap.get(key1)); // Output: value1
+   console.log(weakMap.has(key2)); // Output: true
 
    weakMap.delete(key2);
-   console.log(weakMap.has(key2));    // Output: false
+   console.log(weakMap.has(key2)); // Output: false
    ```
 
 4. WeakSet:
+
    ```javascript
    const weakSet = new WeakSet();
 
@@ -78,11 +82,11 @@ Certainly! Here's a summary of keyed collections in JavaScript with code example
    weakSet.add(obj1);
    weakSet.add(obj2);
 
-   console.log(weakSet.has(obj1));    // Output: true
-   console.log(weakSet.has(obj2));    // Output: true
+   console.log(weakSet.has(obj1)); // Output: true
+   console.log(weakSet.has(obj2)); // Output: true
 
    weakSet.delete(obj2);
-   console.log(weakSet.has(obj2));    // Output: false
+   console.log(weakSet.has(obj2)); // Output: false
    ```
 
 These examples demonstrate the usage of different keyed collections in JavaScript. They allow you to store and

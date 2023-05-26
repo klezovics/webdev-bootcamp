@@ -40,7 +40,9 @@
   font-family: Arial, sans-serif;
   font-size: 25px;
   --size: 1px;
-  text-shadow: var(--size) calc(-1*var(--size)) 0 pink, var(--size) calc(-1*var(--size)) 0 pink, calc(-1*var(--size)) var(--size) 0 pink, var(--size) var(--size) 0 pink;
+  text-shadow: var(--size) calc(-1 * var(--size)) 0 pink,
+    var(--size) calc(-1 * var(--size)) 0 pink,
+    calc(-1 * var(--size)) var(--size) 0 pink, var(--size) var(--size) 0 pink;
 
   /* animation */
   transition: transform 1s;

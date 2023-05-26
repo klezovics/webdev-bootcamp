@@ -23,7 +23,7 @@ assignment `x = 5` is not hoisted, so the value is assigned when the code execut
 ```javascript
 sayHello(); // Output: Hello!
 function sayHello() {
-    console.log("Hello!");
+  console.log("Hello!");
 }
 ```
 

@@ -5,6 +5,7 @@ Arrow functions, also known as fat arrow functions, are a concise way to write f
 Here are some key points about arrow functions:
 
 1. Syntax: Arrow functions are defined using a fat arrow (`=>`) notation. The basic syntax is:
+
 ```javascript
 const functionName = (parameters) => {
   // Function body
@@ -12,8 +13,9 @@ const functionName = (parameters) => {
 ```
 
 2. Shorter Syntax: Arrow functions have a shorter syntax compared to regular functions, especially when they have a single parameter and a single expression in the function body. In such cases, the curly braces and `return` keyword can be omitted:
+
 ```javascript
-const square = x => x * x;
+const square = (x) => x * x;
 ```
 
 3. Lexical `this` Binding: Arrow functions do not have their own `this` value. Instead, they inherit the `this` value from the surrounding context. This makes them convenient to use in scenarios where you want to preserve the value of `this` from the enclosing scope.

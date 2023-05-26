@@ -19,7 +19,7 @@ test("test can find sum of even digits in array", () => {
   const sumOfEvenDigits = (nums) => {
     let sum = 0;
     for (let index = 0; index < nums.length; index++) {
-      if (nums[index]%2===0) {
+      if (nums[index] % 2 === 0) {
         sum += nums[index];
       }
     }
