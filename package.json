@@ -32,7 +32,10 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "jest",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "lint": "npx npx prettier --check .",
+    "format": "npx prettier --write ."
+
   },
   "eslintConfig": {
     "extends": [
