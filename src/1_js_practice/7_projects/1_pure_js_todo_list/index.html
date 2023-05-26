@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Todo List</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+      }
+
+      h1 {
+        text-align: center;
+      }
+
+      .todo-container {
+        margin: 20px auto;
+        max-width: 400px;
+        padding: 20px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+      }
+
+      .todo-container input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        margin-bottom: 10px;
+      }
+
+      .todo-container ul {
+        list-style-type: none;
+        padding: 0;
+      }
+
+      .todo-container li {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        border-bottom: 1px solid #ccc;
+      }
+
+      .todo-container li:last-child {
+        border-bottom: none;
+      }
+
+      .todo-container button {
+        background-color: #4caf50;
+        color: white;
+        border: none;
+        padding: 8px 16px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 14px;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="todo-container">
+      <h1>Todo List</h1>
+      <input type="text" id="todoInput" placeholder="Add a new todo" />
+      <ul id="todoList"></ul>
+      <button onclick="addTodo()">Add Todo</button>
+    </div>
+
+    <script>
+      function addTodo() {
+        const input = document.getElementById("todoInput");
+        const todoText = input.value.trim();
+        if (todoText !== "") {
+          const todoList = document.getElementById("todoList");
+          const newTodo = document.createElement("li");
+          newTodo.innerHTML = `
+          <span>${todoText}</span>
+          <button onclick="deleteTodo(this)">Delete</button>
+        `;
+          todoList.appendChild(newTodo);
+          input.value = "";
+        }
+      }
+
+      function deleteTodo(button) {
+        const todoItem = button.parentNode;
+        const todoList = todoItem.parentNode;
+        todoList.removeChild(todoItem);
+      }
+    </script>
+  </body>
+</html>
