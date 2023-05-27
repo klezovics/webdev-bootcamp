@@ -2,23 +2,9 @@ import React from "react";
 import DanToDoList from "./DanToDoList";
 import { createStore, combineReducers, applyMiddleware } from "redux";
 import { Provider } from "react-redux";
-import todoApp from "../reducers";
-import { loadState, saveState } from "./localStorage";
-import throttle from "lodash/throttle";
+import configureStore from "../configureStore";
 
-const persistedState = loadState();
-
-const todoAppReducer = todoApp;
-const todoAppStore = createStore(todoAppReducer, persistedState);
-
-todoAppStore.subscribe(
-  throttle(() => {
-    saveState({
-      todos: todoAppStore.getState().todos,
-    });
-  }),
-  1000
-);
+const todoAppStore = configureStore();
 
 const AkToDoList = () => (
   <div>
