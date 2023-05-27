@@ -1,38 +1,26 @@
 import { QueryClient } from "react-query";
-import ReduxConsumerContainer from "./2_react_practice/3_redux/2_hello_redux/ReduxConsumerContainer";
-import ToDoWidgetContainer from "./2_react_practice/3_redux/3_todo_widget/ToDoWidgetContainer";
-import TodoList from "./2_react_practice/3_redux/99_idiomatic_redux_course/components/TodoList";
-import DanToDoList from "./2_react_practice/3_redux/99_idiomatic_redux_course/components/DanToDoList";
-import AkToDoList from "./2_react_practice/3_redux/99_idiomatic_redux_course/components/AkToDoList";
-import { ErrorBoundary } from "react-error-boundary";
+import React, { useState } from "react";
 import styled from "styled-components";
+import ErrorBoundary from "./2_react_practice/7_react_patterns/2_error_boundary/error_boundary.js";
+
+function ComponentWithError() {
+  throw new Error("Booom!");
+
+  // ...rest of the component code
+}
+
+const Fallback = styled.div`
+  color: red;
+`;
 
 function App() {
   const queryClient = new QueryClient();
 
-  function ComponentWithError() {
-    throw new Error("Booom!");
-
-    // ...rest of the component code
-  }
-
-  const Fallback = styled.div`
-    color: red;
-  `;
-
   return (
-    <ErrorBoundary
-      fallback={
-        <div>
-          Something went wrong<Fallback>Stay calm!</Fallback>
-        </div>
-      }
-    >
-      {/*<ComponentWithError />*/}
+    <ErrorBoundary>
+      <ComponentWithError />
 
-      <div className="App">
-        <AkToDoList />
-      </div>
+      <div className="App">{/* Rest of your code */}</div>
     </ErrorBoundary>
   );
 }
