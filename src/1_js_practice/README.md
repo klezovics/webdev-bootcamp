@@ -4,10 +4,11 @@ This guide is based on: https://roadmap.sh/javascript
 
 Exercises:
 
-1. https://exercism.org/tracks/javascript/exercises
-2. https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/#basic-javascript
+1. https://exercism.org/tracks/javascript/exercises --> kind of complex
+2. https://www.freecodecamp.org/learn/javascript-algorithms-and-data-structures/#basic-javascript --> best for beginner
 3. https://edabit.com/challenges/javascript
-4. https://pikabu.ru/story/25_besplatnyikh_kursov_javascriptrazrabotki_2023_goda_10247376
+4. https://www.jschallenger.com/javascript-practice --> looks OK
+5. https://pikabu.ru/story/25_besplatnyikh_kursov_javascriptrazrabotki_2023_goda_10247376
 
 Flashcards:
 
