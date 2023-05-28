@@ -1,5 +1,80 @@
 import { info } from "console";
 
+test("write function which always returns 42", () => {
+  const f = () => {};
+
+  expect(f()).toBe(42);
+});
+
+test("write function which returns square of a number", () => {
+  const f = (n) => {};
+
+  expect(f(0)).toBe(0);
+  expect(f(1)).toBe(1);
+  expect(f(2)).toBe(4);
+  expect(f(3)).toBe(9);
+  expect(f(4)).toBe(16);
+});
+
+test("write function which returns cube of a number", () => {
+  const f = () => {};
+
+  // 8 = 4 * 2
+  // = 2 * 2 * 2
+  expect(f(0)).toBe(0);
+  expect(f(1)).toBe(1);
+  expect(f(2)).toBe(8);
+});
+
+test("write function which returns sum of 2 numbers", () => {
+  const f = (a, b) => {
+    return 0;
+  };
+
+  expect(f(0, 0)).toBe(0);
+
+  //Now do same for product/subtraction/division
+});
+
+test("write function which returns sum of 3 numbers", () => {
+  const f = (a, b, c) => {
+    return 0;
+  };
+
+  expect(f(0, 0, 0)).toBe(0);
+
+  //Now do same for product/subtraction/division
+});
+
+test("write function which returns sum of 4 numbers", () => {
+  const f = (a, b, c, d) => {
+    return 0;
+  };
+
+  expect(f(0, 0, 0, 0)).toBe(0);
+
+  //Now do same for product/subtraction/division
+});
+
+test("write function which returns sum of an array", () => {
+  const f = (arr) => {
+    return 0;
+  };
+
+  expect(f([0])).toBe(0);
+
+  //Now do same for product/subtraction/division
+});
+
+test("write function which returns sqrt of number", () => {
+  // you can use Math.sqrt(number) javascript function to get square root of a number
+  const f = () => {};
+
+  expect(f(4)).toBe(2);
+  expect(f(9)).toBe(3);
+  expect(f(16)).toBe(4);
+});
+
 test("test print all numbers 1..n", () => {
   const printNumbers = (n) => {};
 
