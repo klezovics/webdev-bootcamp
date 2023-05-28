@@ -1,3 +1,5 @@
+import { info } from "console";
+
 test("test can find sum of numbers 1,2 .. n", () => {
   const f = (n) => {
     return 0;
@@ -84,18 +86,26 @@ test("test can print 2D array", () => {
     [3, 4], // row 1
   ];
 
-  const f = (array2D) => {
+  const print2dArrayShowIterationOrder = (array2D) => {
     for (let row = 0; row < array2D.length; row++) {
-      console.log("Printing row ", row);
+      info("Printing row ", row);
       for (let col = 0; col < array2D[row].length; col++) {
-        console.log(
-          "Row:" + row + " Column:" + col + " Value:" + array2D[row][col]
-        );
+        info("(" + row + ":" + col + ") -> " + array2D[row][col]);
       }
     }
   };
 
-  f(array2D);
+  const print2dArray = (array2D) => {
+    for (let row = 0; row < array2D.length; row++) {
+      let rowString = "";
+      for (let col = 0; col < array2D[row].length; col++) {
+        rowString += String(array2D[row][col]) + " ";
+      }
+      info(rowString);
+    }
+  };
+
+  print2dArray(array2D);
 });
 
 test("test can get sum of elements in 2D array", () => {
