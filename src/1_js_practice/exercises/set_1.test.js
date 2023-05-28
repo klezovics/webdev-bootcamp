@@ -27,6 +27,25 @@ test("test can reverse an array", () => {
   expect(reverseArray([0, 7, -3])).toEqual([-3, 7, 0]);
 });
 
+test("test is string is palindrome", () => {
+  const isPalindrome = (str) => {
+    return false;
+  };
+
+  expect(isPalindrome("")).toBe(true);
+  expect(isPalindrome("a")).toBe(true);
+
+  expect(isPalindrome("aa")).toBe(true);
+  expect(isPalindrome("ab")).toBe(false);
+  expect(isPalindrome("aba")).toBe(true);
+
+  expect(isPalindrome("abba")).toBe(true);
+  expect(isPalindrome("abab")).toBe(false);
+
+  expect(isPalindrome("wowow")).toBe(true);
+  expect(isPalindrome("ttbbb")).toBe(false);
+});
+
 test("test print all even numbers 1..n in reverse order", () => {
   const printNumbers = (n) => {};
 
