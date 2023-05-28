@@ -46,6 +46,16 @@ test("test is string is palindrome", () => {
   expect(isPalindrome("ttbbb")).toBe(false);
 });
 
+test("test can calculate person age from date of birth", () => {
+  const myBirthday = new Date(1990, 2, 27);
+
+  const calculateAge = (dob) => {
+    return 0;
+  };
+
+  expect(calculateAge(myBirthday)).toBe(33);
+});
+
 test("test print all even numbers 1..n in reverse order", () => {
   const printNumbers = (n) => {};
 
