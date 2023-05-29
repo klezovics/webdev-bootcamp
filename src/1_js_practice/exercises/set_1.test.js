@@ -1,9 +1,43 @@
 import { info } from "console";
 
+/*
+      Notes:
+      - Useful array visualizer: https://array-3d-viz.vercel.app/
+      - Before starting this -> give a demo
+      - Visualize array, explain what operations can be done on array
+      - Visualize array iteration -> forward, backward, with multiple steps
+      - Give visualization of a variable
+      - Give visualization of an if-else statement
+      - Give visualization of different loops
+ */
 test("write function which always returns 42", () => {
   const f = () => {};
 
   expect(f()).toBe(42);
+});
+
+test("write function which prints all elements of array to console", () => {
+  const f = (arr) => {};
+});
+
+test("write function which prints all elements of array to console in reverse", () => {
+  const f = (arr) => {};
+});
+
+test("write function which prints all elements with even index", () => {
+  const f = (arr) => {};
+});
+
+test("write function which prints all elements with odd index", () => {
+  const f = (arr) => {};
+});
+
+test("write function which prints every 3rd element", () => {
+  const f = (arr) => {};
+});
+
+test("write function which prints every nth element", () => {
+  const f = (arr) => {};
 });
 
 test("write function which remove all elements more than 10 from array", () => {
