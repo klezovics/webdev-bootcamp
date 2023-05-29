@@ -103,6 +103,35 @@ test("write function, which find min element in the array", () => {
   expect(f([1, 2, 3, -1])).toBe(-1);
 });
 
+test("write function, which processes array and increases each positive number by 1", () => {
+  const f = (nums) => {
+    return 0;
+  };
+
+  expect(f([0])).toBe(0);
+  expect(f([1])).toBe(1);
+  expect(f([1, 2])).toBe(1);
+  expect(f([1, 2, 3])).toBe(1);
+  expect(f([1, 2, 3, -1])).toBe(-1);
+});
+
+test("v2 write function, which processes array and increases each non-negative number by 1", () => {
+  // If the number is negative throw error like this -> throw new Error("Negative number found");
+
+  const f = (nums) => {
+    return 0;
+  };
+
+  expect(f([0])).toBe(1);
+  expect(f([1, 2, 5])).toBe([2, 3, 6]);
+
+  try {
+    f([2, 1, -1]);
+  } catch (e) {
+    expect(e.message).toBe("Negative number found");
+  }
+});
+
 test("write function, which find 2nd biggest element in the array", () => {
   const f = (nums) => {
     return 0;
