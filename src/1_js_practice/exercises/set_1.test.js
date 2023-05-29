@@ -6,6 +6,30 @@ test("write function which always returns 42", () => {
   expect(f()).toBe(42);
 });
 
+test("write function which remove all elements more than 10 from array", () => {
+  const f = (arr) => {
+    return [];
+  };
+
+  expect(f([1, 2, 11])).toBe([1, 2]);
+});
+
+test("write function which remove all odd elements from array", () => {
+  const f = (arr) => {
+    return [];
+  };
+
+  expect(f([1, 2, 11])).toBe([2]);
+});
+
+test("write function which remove all elements which are divisible by 3 from array", () => {
+  const f = (arr) => {
+    return [];
+  };
+
+  expect(f([1, 3, 11, 15])).toBe([1, 15]);
+});
+
 test("write function which return sum of numbers n to m", () => {
   const f = (n, m) => {
     return 0;
