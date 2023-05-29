@@ -27,7 +27,8 @@ test("write function which remove all elements which are divisible by 3 from arr
     return [];
   };
 
-  expect(f([1, 3, 11, 15])).toBe([1, 15]);
+  expect(f([1, 3, 2, 6, 15])).toBe([1, 2]);
+  expect(f([1, 3, 11, 15])).toBe([1, 11]);
 });
 
 test("write function which return sum of numbers n to m", () => {
