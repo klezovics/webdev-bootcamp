@@ -6,6 +6,53 @@ test("write function which always returns 42", () => {
   expect(f()).toBe(42);
 });
 
+test("write function which return sum of numbers n to m", () => {
+  const f = (n, m) => {
+    return 0;
+  };
+
+  expect(f(0, 0)).toBe(0);
+  expect(f(0, 1)).toBe(1);
+  expect(f(0, 2)).toBe(3);
+  expect(f(0, 3)).toBe(6);
+
+  expect(f(1, 4)).toBe(10);
+  expect(f(2, 3)).toBe(5);
+  expect(f(10, 13)).toBe(46);
+});
+
+test("write function, which find max element in the array", () => {
+  const f = (nums) => {
+    return 0;
+  };
+
+  expect(f([0])).toBe(0);
+  expect(f([1])).toBe(1);
+  expect(f([1, 2])).toBe(2);
+  expect(f([1, 2, 3])).toBe(3);
+});
+
+test("write function, which find min element in the array", () => {
+  const f = (nums) => {
+    return 0;
+  };
+
+  expect(f([0])).toBe(0);
+  expect(f([1])).toBe(1);
+  expect(f([1, 2])).toBe(1);
+  expect(f([1, 2, 3])).toBe(1);
+  expect(f([1, 2, 3, -1])).toBe(-1);
+});
+
+test("write function, which find 2nd biggest element in the array", () => {
+  const f = (nums) => {
+    return 0;
+  };
+
+  expect(f([1, 2])).toBe(1);
+  expect(f([1, 2, 3, 4, 5])).toBe(4);
+});
+
 test("write function which returns square of a number", () => {
   const f = (n) => {};
 
@@ -168,6 +215,43 @@ test("test can find sum of first N even numbers", () => {
   expect(f(0)).toBe(0);
 });
 
+test("count number of different characters in string", () => {
+  const f = (str) => {
+    return 0;
+  };
+
+  expect(f("")).toBe(0);
+  expect(f("a")).toBe(1);
+  expect(f("aa")).toBe(1);
+  expect(f("ab")).toBe(2);
+  expect(f("aba")).toBe(2);
+  expect(f("abc")).toBe(3);
+  expect(f("abca")).toBe(3);
+  expect(f("abcb")).toBe(3);
+  expect(f("abcc")).toBe(3);
+});
+
+test("find number of element occurrences in array", () => {
+  const f = (arr, element) => {
+    return 0;
+  };
+
+  expect(f([1], 1)).toBe(1);
+  expect(f([1], 2)).toBe(0);
+
+  expect(f([1, 2, 3], 1)).toBe(1);
+  expect(f([1, 2, 3], 2)).toBe(1);
+  expect(f([1, 2, 3], 3)).toBe(1);
+  expect(f([1, 2, 3], 4)).toBe(0);
+
+  expect(f([1, 1, 1], 1)).toBe(3);
+  expect(f([1, 1, 1], 2)).toBe(0);
+
+  expect(f([1, 2, 1], 1)).toBe(2);
+  expect(f([1, 2, 1], 2)).toBe(1);
+  expect(f([1, 2, 1], 3)).toBe(0);
+});
+
 test("find sum of first N numbers which are divisable by 3", () => {
   const f = (n) => {
     return 0;
@@ -182,6 +266,42 @@ test("find sum of first N numbers which are divisable by 5", () => {
   };
 
   expect(f(0)).toBe(0);
+});
+
+test("get average of only positive numbers in array", () => {
+  const f = (arr) => {
+    return 0;
+  };
+
+  expect(f([])).toBe(0);
+  expect(f([0])).toBe(0);
+  expect(f([1])).toBe(1);
+  expect(f([1, 2])).toBe(1.5);
+  expect(f([1, 2, 3])).toBe(2);
+
+  expect(f([4, 4, 4, -100, -99])).toBe(4);
+
+  expect(f([-1])).toBe(0);
+  expect(f([-100, 1, 2, -1000])).toBe(1.5);
+});
+
+test("remove duplicates from array", () => {
+  const f = (arr) => {
+    return [];
+  };
+
+  expect(f([])).toEqual([]);
+  expect(f([1])).toEqual([1]);
+  expect(f([1, 2])).toEqual([1, 2]);
+  expect(f([1, 1])).toEqual([1]);
+
+  expect(f([1, 1, 1])).toEqual([1]);
+  expect(f([1, 2, 1])).toEqual([1, 2]);
+  expect(f([1, 2, 2])).toEqual([1, 2]);
+  expect(f([1, 2, 1, 2])).toEqual([1, 2]);
+
+  expect(f([1, 2, 1, 2, 1])).toEqual([1, 2]);
+  expect(f([1, 2, 3, 3, 100, 777])).toEqual([1, 2, 3, 100, 777]);
 });
 
 test("test can find product of first N numbers", () => {
