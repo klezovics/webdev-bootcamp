@@ -1,5 +1,3 @@
-import info from "console";
-
 /*
       Notes:
       - Useful array visualizer: https://array-3d-viz.vercel.app/
@@ -449,12 +447,12 @@ test("test can print 2D array", () => {
   ];
 
   const print2dArrayShowIterationOrder = (array2D) => {
-    for (let row = 0; row < array2D.length; row++) {
-      info("Printing row ", row);
-      for (let col = 0; col < array2D[row].length; col++) {
-        info("(" + row + ":" + col + ") -> " + array2D[row][col]);
-      }
-    }
+    // for (let row = 0; row < array2D.length; row++) {
+    //   info("Printing row ", row);
+    //   for (let col = 0; col < array2D[row].length; col++) {
+    //     info("(" + row + ":" + col + ") -> " + array2D[row][col]);
+    //   }
+    // }
   };
 
   const print2dArray = (array2D) => {
@@ -463,7 +461,7 @@ test("test can print 2D array", () => {
       for (let col = 0; col < array2D[row].length; col++) {
         rowString += String(array2D[row][col]) + " ";
       }
-      info(rowString);
+      //info(rowString);
     }
   };
 
