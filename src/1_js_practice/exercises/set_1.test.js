@@ -1,3 +1,5 @@
+const { forEach } = require("lodash");
+
 /*
       Notes:
       - Useful array visualizer: https://array-3d-viz.vercel.app/
@@ -47,7 +49,13 @@ test("write function which prints every nth element", () => {
 
 test("write function which remove all elements more than 10 from array", () => {
   const f = (arr) => {
-    return [];
+    const result = arr.filter((el) => {
+      if (el > 10) {
+        return false;
+      }
+      return true;
+    });
+    return result;
   };
 
   expect(f([1, 2, 11])).toBe([1, 2]);
