@@ -58,7 +58,7 @@ test("write function which remove all elements more than 10 from array", () => {
     return result;
   };
 
-  expect(f([1, 2, 11])).toBe([1, 2]);
+  expect(f([1, 2, 11])).toEqual([1, 2]);
 });
 
 test("write function which remove all odd elements from array", () => {
