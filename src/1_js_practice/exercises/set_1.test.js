@@ -1,4 +1,4 @@
-import { info } from "console";
+import info from "console";
 
 /*
       Notes:
@@ -11,7 +11,9 @@ import { info } from "console";
       - Give visualization of different loops
  */
 test("write function which always returns 42", () => {
-  const f = () => {};
+  const f = () => {
+    return 42;
+  };
 
   expect(f()).toBe(42);
 });
