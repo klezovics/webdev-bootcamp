@@ -17,7 +17,9 @@ test("write function which always returns 42", () => {
 });
 
 test("write function which prints all elements of array to console", () => {
-  const f = (arr) => {};
+  const f = (arr) => {
+    arr.forEach((element) => info(element));
+  };
 
   //Ask Juliana to do this with each known loop type
 });
